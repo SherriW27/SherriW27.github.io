@@ -1,0 +1,151 @@
+<div class="container text-center">
+  <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">
+    Download PDF Resume
+  </button>
+  <div class="pb-2">
+    <accordion [isAnimated]="true" class="shadow">
+      <accordion-group [(isOpen)]="isWorkExperienceOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Work Experience</div>
+          <div style="width: 10.95px">
+            <div *ngIf="!isWorkExperienceOpen" style="color: white">></div>
+            <div *ngIf="isWorkExperienceOpen" style="color: white">v</div>
+          </div>
+        </button>
+        <div class="text-align:left;">
+          <h2 class="mb-0">Front-End Developer</h2>
+          <h3 class="text-primary">Profit Solution International</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Earum ipsum deleniti nostrum ratione exercitationem molestiae,
+            </li>
+            <li>cupiditate error maxime quam repudiandae iste cumque,</li>
+            <li>
+              fugit nihil perspiciatis quibusdam possimus explicabo dolor! Iste!
+            </li>
+            <li>error maxime quam repudiandae iste cumque,</li>
+          </ul>
+        </div>
+        <hr />
+        <div class="text-align:left;">
+          <h2 class="mb-0">Project Assistant</h2>
+          <h3 class="text-primary">Bureau of Consular Affairs</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Earum ipsum deleniti nostrum ratione exercitationem molestiae,
+            </li>
+            <li>cupiditate error maxime quam repudiandae iste cumque,</li>
+            <li>
+              fugit nihil perspiciatis quibusdam possimus explicabo dolor! Iste!
+            </li>
+            <li>error maxime quam repudiandae iste cumque,</li>
+          </ul>
+        </div>
+        <hr />
+        <div class="text-align:left;">
+          <h2 class="mb-0">Logistic Specialist</h2>
+          <h3 class="text-primary">InMusic Corp.</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Earum ipsum deleniti nostrum ratione exercitationem molestiae,
+            </li>
+            <li>cupiditate error maxime quam repudiandae iste cumque,</li>
+            <li>
+              fugit nihil perspiciatis quibusdam possimus explicabo dolor! Iste!
+            </li>
+            <li>error maxime quam repudiandae iste cumque,</li>
+          </ul>
+        </div>
+      </accordion-group>
+      <accordion-group [(isOpen)]="isEducationOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Education</div>
+          <div style="width: 10.95px">
+            <div *ngIf="!isEducationOpen" style="color: white">></div>
+            <div *ngIf="isEducationOpen" style="color: white">v</div>
+          </div>
+        </button>
+        <div class="text-align:left;">
+          <h2 class="mb-0">Bachelor of English and literature</h2>
+          <h3 class="text-primary">Chinese culture University</h3>
+          <ul>
+            <li>Graduated from Chinese culture university in June 2020</li>
+            <li>
+              Participated in extracurricular clubs such as guitar ,basketball,
+              and more!
+            </li>
+          </ul>
+        </div>
+      </accordion-group>
+      <accordion-group [(isOpen)]="isCertificationsOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Certifications</div>
+          <div style="width: 10.95px">
+            <div *ngIf="!isCertificationsOpen" style="color: white">></div>
+            <div *ngIf="isCertificationsOpen" style="color: white">v</div>
+          </div>
+        </button>
+        <div class="text-align:left;">
+          <h3 class="text-primary">TOEIC</h3>
+          <ul>
+            <li>TOEIC score of 945</li>
+          </ul>
+        </div>
+      </accordion-group>
+      <accordion-group [(isOpen)]="isSkillsOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Skills</div>
+          <div style="width: 10.95px">
+            <div *ngIf="!isSkillsOpen" style="color: white">></div>
+            <div *ngIf="isSkillsOpen" style="color: white">v</div>
+          </div>
+        </button>
+        <div class="row" style="text-align: left">
+          <div class="col">
+            <h3>Programming Languages:</h3>
+            <ul>
+              <li>Javascript</li>
+              <li>Typescript</li>
+
+              <li>Php</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Frameworks:</h3>
+            <ul>
+              <li>Angular</li>
+              <li>React</li>
+              <li>Node.JS</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Other Skills:</h3>
+            <ul>
+              <li>Source Control via Git</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+        </div>
+      </accordion-group>
+    </accordion>
+  </div>
+</div>
